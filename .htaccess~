@@ -1,0 +1,1 @@
+RewriteRule ^/confirmation/([0-9]+) /confirmation.php?id=$1 [L]
