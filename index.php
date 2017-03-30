@@ -18,16 +18,16 @@ error_reporting(E_ALL);
 ?>
 <html>
 <head>
-	<title>STC Hour Manager</title>
-	<link rel="icon" type="image/ico" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/bootstrap.css"><!-- load bootstrap -->
+  <title>STC Hour Manager</title>
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.css"><!-- load bootstrap -->
   <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css"><!-- load animate -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="konami.js"></script>
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 function load(){
    var x = document.getElementById("hourTable").rows.length;
@@ -50,7 +50,7 @@ function claimClick(obj){
 </head>
 <body onload="load">
 <div class="container">
-	<!-- Fixed navbar -->
+  <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -89,21 +89,21 @@ function claimClick(obj){
       </div>
     </div>
     <img style="position: relative; right: 400px;" src=null id="spencer">
-		<div id="content" class="animated bounceInUp col-sm-12 text-center" style="background-color: transparent;margin-top:35px;margin-left:-20px;">
+    <div id="content" class="animated bounceInUp col-sm-12 text-center" style="background-color: transparent;margin-top:35px;margin-left:-20px;">
       <!--<div><h4>Up for grabs:</h4></div>-->
-			<table id="hourTable" class="table table-striped text-center">
-      		 <thead>
-       			<tr>
-         		 	  <th class="text-center">Date</th>
-          			<th class="text-center">Name</th>
-          			<th class="text-center">Shift Start</th>
-          			<th class="text-center">Shift End</th>
-          			<th class="text-center">Claim</th>
+      <table id="hourTable" class="table table-striped text-center">
+           <thead>
+             <tr>
+                  <th class="text-center">Date</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Shift Start</th>
+                <th class="text-center">Shift End</th>
+                <th class="text-center">Claim</th>
                 <th class="text-center">Delete</th>
-       			</tr>
-      		 </thead>
-      		 <tbody>
-       	   <?php
+             </tr>
+           </thead>
+           <tbody>
+            <?php
             /*
               Redirect user to the CAS system, if there is no uid parameter in the URL.
             */
@@ -159,10 +159,10 @@ function claimClick(obj){
                 echo "</tr>";
               }
             ?>      
-      		 </tbody>
-    		</table>
-		</div><!-- End content -->
-	</div><!--End main -->
+           </tbody>
+        </table>
+    </div><!-- End content -->
+  </div><!--End main -->
 </div><!--End container-->
 </body>
 </html>
